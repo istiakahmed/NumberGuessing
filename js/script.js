@@ -27,6 +27,8 @@ let chanceCount        =      document.querySelector('.chanceCount')
 
 // =========== Function part start
     chanceNumber.innerHTML = chance
+    chanceNumberThree.innerHTML = chance
+
     //  ============Player one function
 
     playerOneButton.addEventListener('click', ()=>{
@@ -57,7 +59,7 @@ let chanceCount        =      document.querySelector('.chanceCount')
                 }else{
                     
                     if(playerTwoInput.value == playerOneInput.value){
-                        error.innerHTML  = ''
+                        error.innerHTML  = ""
                         playerTwoInput.value = ''
                         winner.style = 'display:block'
                         result.innerHTML = 'Winner is Player - 2'
@@ -74,7 +76,7 @@ let chanceCount        =      document.querySelector('.chanceCount')
                             chance += 5
                             
                             playerThreeButton.addEventListener('click', ()=>{
-                                chanceNumberThree.innerHTML = chance
+                                // chanceNumberThree.innerHTML = chance
                                 if(playerThreeInput.value == ''){
                                     error.innerHTML = "Please Enter an input!!!"
                                 }else{
@@ -91,6 +93,7 @@ let chanceCount        =      document.querySelector('.chanceCount')
 
                                         }else{
                                             chance--
+                                            chanceNumberThree.innerHTML = chance
                                             if(chance == 0){
                                                 playerTwoInput.value = ''
                                                 playerThree.style    = 'display:none'
