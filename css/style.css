@@ -1,0 +1,143 @@
+/* ============= google font link ====== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+ }
+ body{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    grid-gap: 25px;
+    background: repeating-linear-gradient(135deg,#747172 0 20px,#a966b7 0 40px);
+ }
+ .numberGuessing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+ }
+ .headText{
+    margin-bottom: 70px;
+    border: 3px solid #088395;
+    border-radius: 35px;
+    padding: 10px 20px;
+    background: #747172;
+    
+ }
+ .headText h1{
+    color:#f9e724 ;
+    text-shadow: #070605 1px 0 10px;
+    font-size: 26px;
+    font-weight: 700;
+ }
+ .error{
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+ }
+ .main{
+    padding: 10px 20px;
+    border: 3px solid #0000;
+    border-radius: 12px;
+    background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+        var(--angle),
+        #18d9ac,
+        #e50808
+      ) border-box;
+    animation: 6.5s rotate linear infinite;
+ }
+ @keyframes rotate {
+    to {
+      --angle: 360deg;
+    }
+  }
+  @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+ .main h2{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+ }
+
+ .mainInput {
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    
+  }
+  .button{
+    background: #FF6500;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 7px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .button:hover{
+    background: #e50808;
+    /* transform: scale(1.1); */
+
+  }
+  .button:active{
+    transform: scale(1.1);
+  }
+ .playerTwo{
+    display: none;
+ } 
+ .playerThree{
+    display: none;
+ } 
+ .winner{
+   display: none;
+   text-align: center;
+ }
+ .winner img{
+   margin-top: 5px;
+   width: 250px;
+   height: 200px;
+
+ }
+ .winner h2{
+   font-size: 55px;
+   font-weight: 600;
+   color: #fff;
+   text-align: center;
+ }
+ /* .chanceCount{
+   display: none;
+ } */
+ .chanceText{
+
+   font-size: 14px;
+   font-weight: 400;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   color: #fff;
+ }
+ .chanceBox{
+   border-radius: 50%;
+   background: #747172;
+   padding: 5px;
+   margin-left: 5px;
+ }
+
+  
+  
+ 
